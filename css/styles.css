@@ -9,3 +9,38 @@ h1{
 	color: white;
 	text-transform: uppercase;
 }
+
+/*------------SLIDER-----------*/
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    position: relative;
+}
+
+
+
+.slider-wrap{
+	width: 250px;
+    left: calc(50% - 125px);
+
+}
+
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+	height: 185px;    
+}
+
+slick-slide {
+    position: relative;
+    display: none;
+    float: left;
+
+    min-height: 1px;
+}
+
+/*-------------SLIDER-END---------*/
