@@ -13,7 +13,7 @@ h1{
 /*------------SLIDER-----------*/
 
 .container{
-    width: 1170px;
+    width: 470px;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: Raleway, sans-serif;
@@ -35,12 +35,5 @@ h1{
 	height: 185px;    
 }
 
-slick-slide {
-    position: relative;
-    display: none;
-    float: left;
-
-    min-height: 1px;
-}
 
 /*-------------SLIDER-END---------*/
