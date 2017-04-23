@@ -1,0 +1,30 @@
+﻿@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff);
+	src: url(../fonts/montserrat-regular/Montserrat-Regular.woff) format('woff'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.woff2) format('woff2'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.eot) format('eot'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.ttf) format('ttf'),
+		 url(../fonts/montserrat-regular/Montserrat-Regular.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'Montserrat-Black';
+	src: url(../fonts/montserrat-black/montserrat-black.woff);
+	src: url(../fonts/montserrat-black/montserrat-black.woff) format('woff'),
+		 url(../fonts/montserrat-black/montserrat-black.woff2) format('woff2'),
+		 url(../fonts/montserrat-black/montserrat-black.eot) format('eot'),
+		 url(../fonts/montserrat-black/montserrat-black.ttf) format('ttf'),
+		 url(../fonts/montserrat-black/montserrat-black.svg) format('svg');
+}
+
+@font-face {
+	font-family: 'CrimsonText-Roman';
+	src: url(../fonts/crimsonText-roman/crimsontext-roman.woff);
+	src: url(../fonts/crimsonText-roman/crimsontext-roman.woff) format('woff'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.woff2) format('woff2'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.eot) format('eot'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.ttf) format('ttf'),
+		 url(../fonts/crimsonText-roman/crimsontext-roman.svg) format('svg');
+}
+		
