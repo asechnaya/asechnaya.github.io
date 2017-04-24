@@ -1,0 +1,74 @@
+
+.row1{
+	margin-top: 56px;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Arvo';
+	color: rgb(59, 63, 106);
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.row2{
+	margin-top: 216px;
+	text-align: center;	
+}
+
+.row2-pictures{
+
+	display: inline-block;
+
+}
+
+.row2-pictures_pic1{
+	width: 184px;
+	height: 140px;
+}
+
+.row2-pictures_pic2{
+
+	width: 112px;
+	height: 130px;
+}
+
+.row2-pictures_pic3{
+	margin-top: 25px;
+	width: 161px;
+	height: 119px;
+}
+
+
+.row2-pictures_pic4{
+	width: 171px;
+	height: 147px;
+}
+
+.row3{
+	text-align: center;
+}
+
+.row3-h2{
+	margin-top: 30px;}
+	
+h2{
+	color: rgb(59, 63, 106);
+	font-family: Arvo;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 30px;
+
+}
+
+.row4{
+	text-align: center;
+}
+
+.row4-text{
+	margin-top: 25px;
+	color: #686c8a;
+	font-size: 20px;
+	font-family: 'notosans-regular'; 
+	line-height: 30px;
+}
