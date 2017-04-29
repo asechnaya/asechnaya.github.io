@@ -1,0 +1,19 @@
+{
+  "name": "lesson_9",
+  "version": "1.0.0",
+  "description": "less-sass lesson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/asechnaya.github.io/lesson_9.git"
+  },
+  "author": "Asja Makarovskaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asechnaya.github.io/lesson_9/issues"
+  },
+  "homepage": "https://github.com/asechnaya.github.io/lesson_9#readme"
+}
