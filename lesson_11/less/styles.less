@@ -1,0 +1,87 @@
+html {
+  font-size: 10px;
+  font-family: "Open Sans";
+}
+
+body{
+	 color: white;
+	 background-color: black;
+}
+
+.container{
+	margin: 0 auto;
+}
+
+header{
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	h1{
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 900;
+	}
+}
+
+@import "mixin.less";
+
+
+.cloth{
+			margin-bottom: 10px;
+			height: 45rem;
+
+	&__men{
+		background: url(../img/men.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	&__women{
+		background: url(../img/women.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	&__wed{
+		background: url(../img/wed.jpg) center center no-repeat;
+		background-size: cover;
+
+	}
+}
+
+.photo{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			.transition(all, 0.9s, easy);
+			//background-color: rgba(39,61,162, .36);
+			&:hover{
+				background-color: rgba(0,0,0,.66);
+				.photo-bg{visibility: visible;}
+			}
+			&-bg{
+				visibility: hidden;
+			}
+	&-about{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10px;
+		color: #fff;
+		font-size: 2.5rem;
+	}
+	a {
+			display: block;
+			text-align: center;
+			width: 200px;
+			border: 1px solid #fff;
+			line-height: 40px;
+			height: 40px;
+			color: #000;
+			background-color: #fff;
+			.border-radius(@r: 10px);
+			&:hover{
+				color: #000;
+				text-decoration: none;
+			}
+		}
+}
+
+.content{
+	margin-bottom: 10rem;
+}
