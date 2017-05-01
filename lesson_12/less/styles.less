@@ -1,0 +1,66 @@
+@import 'mixin.less';
+
+html {
+  font-size: 10px;
+  font-family: "Open Sans";
+}
+
+body{
+	 //color: white;
+	// background-color: silver;
+}
+.popup{
+	text-align: center;
+	width: 258px;
+	height: 471px;
+	//background-color: #fff;
+	position: fixed;
+	left: 50%;
+	top: 10%;
+	transform: translateY(-90%) translateX(-50%);
+	transition: all 3s;
+	//visibility: hidden;
+	&-overlay{
+		//background-color: rgba(0, 0, 0, 0.7);
+	    position: absolute;
+	    top: 0;
+	    width: 100vw;
+	    height: 100vh;
+	    display: none;
+	    transition: all 0.2s;
+	    outline: none;
+	&:target{
+			display: block;
+			& + .popup {
+			visibility: visible;
+
+			transform: translateY(-10%) translateX(-50%);
+		  	//transform: scale(.2);
+  			transition: all 3s easy;
+  			.popup-close{
+  				display: block;
+  				}
+  			.catlink{display: none;}	
+  			}
+		}
+	}
+	&-close{
+		position: absolute;
+		text-align: center;
+		top: 100%;
+		right: 1rem;
+		text-decoration: none;
+		font-size: 2rem;
+		display: none;
+	}
+
+
+}
+.catlink{
+	text-decoration: none;
+}
+
+section{
+	padding-top: 40rem;
+	text-align: center;
+}

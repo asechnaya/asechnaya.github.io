@@ -1,0 +1,60 @@
+/* gradient */
+/* opacity */
+/* box shadow */
+/* text shadow */
+/* box sizing */
+/* border radius */
+/* column */
+html {
+  font-size: 10px;
+  font-family: "Open Sans";
+}
+.popup {
+  text-align: center;
+  width: 258px;
+  height: 471px;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateY(-90%) translateX(-50%);
+  transition: all 3s;
+}
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  transition: all 0.2s;
+  outline: none;
+}
+.popup-overlay:target {
+  display: block;
+}
+.popup-overlay:target + .popup {
+  visibility: visible;
+  transform: translateY(-10%) translateX(-50%);
+  transition: all 3s easy;
+}
+.popup-overlay:target + .popup .popup-close {
+  display: block;
+}
+.popup-overlay:target + .popup .catlink {
+  display: none;
+}
+.popup-close {
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  display: none;
+}
+.catlink {
+  text-decoration: none;
+}
+section {
+  padding-top: 40rem;
+  text-align: center;
+}
