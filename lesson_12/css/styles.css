@@ -51,9 +51,19 @@ html {
   font-size: 2rem;
   display: none;
 }
+
+.popup-close:hover {
+  text-decoration: none;
+}
+
 .catlink {
   text-decoration: none;
 }
+
+.catlink:hover {
+  text-decoration: none;
+}
+
 section {
   padding-top: 40rem;
   text-align: center;
