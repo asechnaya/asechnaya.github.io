@@ -1,0 +1,251 @@
+/*Basic settings*/
+body {
+  font-size: 10px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton.eot');
+  src: url('../fonts/Panton.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton.woff2') format('woff2'), url('../fonts/Panton.woff') format('woff'), url('../fonts/Panton.ttf') format('truetype'), url('../fonts/Panton.svg#Panton') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton Black';
+  src: url('../fonts/Panton-Black.eot');
+  src: url('../fonts/Panton-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-Black.woff2') format('woff2'), url('../fonts/Panton-Black.woff') format('woff'), url('../fonts/Panton-Black.ttf') format('truetype'), url('../fonts/Panton-Black.svg#Panton-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton ExtraBold';
+  src: url('../fonts/Panton-ExtraBold.eot');
+  src: url('../fonts/Panton-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-ExtraBold.woff2') format('woff2'), url('../fonts/Panton-ExtraBold.woff') format('woff'), url('../fonts/Panton-ExtraBold.ttf') format('truetype'), url('../fonts/Panton-ExtraBold.svg#Panton-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+/*fonts mixins*/
+.extrabold {
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+}
+.semibold {
+  font-family: 'Panton';
+  font-weight: 600;
+}
+.light {
+  font-family: 'Panton';
+  font-weight: 300;
+}
+.black {
+  font-family: 'Panton Black';
+  font-weight: 400;
+}
+.extrablack {
+  font-family: 'Panton Black';
+  font-weight: 900;
+}
+/*anim mixins*/
+@keyframes color_btn {
+  from {
+    background-color: #059feb;
+  }
+  to {
+    background-color: #0fffeb;
+  }
+}
+@keyframes pulse_btn {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.header {
+  text-align: center;
+}
+.header-logo {
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+  font-size: 2rem;
+  opacity: 0.9;
+  color: #363636;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.header-phone {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.header-phone-text {
+  color: #363636;
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.header-phone-btn {
+  display: inline-block;
+  width: 22.25rem;
+  height: 4.25rem;
+  border: 0.167rem solid #282828;
+  border-radius: 10px;
+  text-align: center;
+}
+.header-phone-btn__text {
+  color: #363636;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 2.16rem;
+  text-decoration: none;
+}
+.header-phone-btn__text:hover {
+  text-decoration: none;
+  color: #363636;
+}
+.header-menu {
+  background-color: #363636;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+.header-menu li {
+  display: inline-block;
+  float: left;
+  margin-left: 1.5rem;
+}
+.header-menu li a {
+  color: white;
+  font-family: 'Panton';
+  font-weight: 300;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+.header-menu li a:hover {
+  text-decoration: none;
+}
+.main {
+  background: url('../img/header/bg_main.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  height: 107rem;
+}
+.main-portfolio {
+  margin-top: 28rem;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.main-portfolio-header {
+  color: white;
+  font-family: 'Panton Black';
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.main-portfolio-text {
+  color: white;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 7rem;
+}
+.main-portfolio_video {
+  color: white;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.main-portfolio_video:after {
+  content: url(../img/header/arrow.png);
+  vertical-align: bottom;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  padding-top: 2rem;
+}
+.main-portfolio_btn {
+  display: inline-block;
+  width: 29.167rem;
+  height: 5.5rem;
+  background-color: #059feb;
+  border-radius: 33px;
+  color: white;
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.main-portfolio_btn:hover {
+  text-decoration: none;
+  color: white;
+  animation: color_btn 2s ease-in-out infinite alternate-reverse, pulse_btn 2s ease-in-out infinite alternate-reverse;
+}
+.main-portfolio_textmore {
+  margin-top: 15rem;
+  color: white;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 2rem;
+}
+.main-portfolio_moreclick {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+.aboutus h2 {
+  margin-top: 14.5rem;
+  margin-bottom: 11rem;
+  text-align: center;
+  color: #363636;
+  font-family: 'Panton Black';
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.aboutus-h3 {
+  position: relative;
+}
+.aboutus-h3:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  margin-right: 0.8rem;
+  width: 0.417rem;
+  height: 9rem;
+  background-color: #059feb;
+}
+.aboutus-h3_img {
+  margin-left: 0.8rem;
+}
+.aboutus-h3 h3 {
+  color: #363636;
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+  margin-top: .7rem;
+}
+.aboutus p {
+  color: black;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}

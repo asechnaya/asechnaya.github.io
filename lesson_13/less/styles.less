@@ -1,0 +1,253 @@
+
+/*Basic settings*/
+body {
+  font-size: 10px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton.eot');
+  src: url('../fonts/Panton.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton.woff2') format('woff2'), url('../fonts/Panton.woff') format('woff'), url('../fonts/Panton.ttf') format('truetype'), url('../fonts/Panton.svg#Panton') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton Black';
+  src: url('../fonts/Panton-Black.eot');
+  src: url('../fonts/Panton-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-Black.woff2') format('woff2'), url('../fonts/Panton-Black.woff') format('woff'), url('../fonts/Panton-Black.ttf') format('truetype'), url('../fonts/Panton-Black.svg#Panton-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton ExtraBold';
+  src: url('../fonts/Panton-ExtraBold.eot');
+  src: url('../fonts/Panton-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-ExtraBold.woff2') format('woff2'), url('../fonts/Panton-ExtraBold.woff') format('woff'), url('../fonts/Panton-ExtraBold.ttf') format('truetype'), url('../fonts/Panton-ExtraBold.svg#Panton-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*fonts mixins*/
+.extrabold {
+  font-family: 'Panton ExtraBold';
+  font-weight: 800;
+}
+.semibold {
+  font-family: 'Panton';
+  font-weight: 600;
+}
+.light {
+  font-family: 'Panton';
+  font-weight: 300;
+}
+.black {
+  font-family: 'Panton Black';
+  font-weight: 400;
+}
+.extrablack {
+  font-family: 'Panton Black';
+  font-weight: 900;
+}
+
+/*anim mixins*/
+@keyframes color_btn{
+	from{
+		background-color: rgb(5, 159, 235);
+	}
+	to{
+		background-color: rgb(15, 259, 235);
+	}
+}
+
+
+
+.header {
+	text-align: center;
+	&-logo{
+		.extrabold;
+  		font-size: 2rem;
+		opacity: 0.9;
+		color: rgb(54, 54, 54);
+  		margin-bottom: 1.5rem;
+  		margin-top: 1.5rem;
+	}
+
+	&-phone{
+			margin-bottom: 1rem;
+ 			margin-top: 2rem;
+		&-text{
+			color: rgb(54, 54, 54);
+			.extrabold;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+		}
+		&-btn{
+			display: inline-block;
+			width: 22.25rem;
+			height: 4.25rem;
+			border: 0.167rem solid rgb(40, 40, 40);
+			border-radius: 10px;
+			text-align: center;
+			&__text{
+				color: rgb(54, 54, 54);
+				.semibold;
+				font-size: 2.16rem; 
+				text-decoration: none;
+				&:hover{
+					text-decoration: none;
+					color: rgb(54, 54, 54);
+				}
+			}
+		}
+	}
+
+	&-menu{
+		background-color: #363636;
+		text-align: center;
+		padding-top: 2.5rem;
+ 		padding-bottom: 2.5rem;
+ 		position: relative;
+		li{
+			display: inline-block;
+			float: left;
+			margin-left: 1.5rem;
+  			//margin-right: 1.5rem;
+  			a {
+  				color: white;
+				.light;
+				font-size: 2.2rem;
+  				text-decoration: none;
+  				&:hover{
+  					text-decoration: none;
+  					}
+  				}
+			}
+		}
+
+}
+
+
+.main{
+	background: url('../img/header/bg_main.jpg') no-repeat center center;
+  	background-size: cover;
+	text-align: center; 
+	height: 107rem;
+	&-portfolio{
+		margin-top: 28rem;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+		&-header{
+			color: white;
+			.black;
+			font-size: 3rem;
+			text-transform: uppercase;
+			margin-bottom: 3rem;
+			margin-top: 3rem;
+		   }
+		&-text{
+			color: white;
+			.semibold;
+			font-size: 2rem;
+			font-weight: 400;
+			line-height: 1.5;
+			text-transform: uppercase;	
+			margin-bottom: 7rem;
+		}   
+		&_video{
+			color: white;
+			.semibold;
+			font-size: 2rem;
+			margin-bottom: 3rem;
+			&:after{
+				content: url(../img/header/arrow.png);
+    			vertical-align: bottom;
+    			display: inline-block;
+    			width: 3rem;
+    			height: 3rem;
+    			padding-top: 2rem;
+			}
+		}
+		&_btn{
+			display: inline-block;
+			width: 29.167rem;
+			height: 5.5rem;
+			background-color: rgb(5, 159, 235);
+			border-radius: 33px;
+			color: white;
+			.extrabold;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 1rem 3rem;
+			//----------------------------
+			//animation: color_btn 2s ease-in-out infinite alternate-reverse;
+			&:hover{
+				text-decoration: none;
+				color: white;
+				animation: color_btn 2s ease-in-out infinite alternate-reverse;
+			}
+		}
+		&_textmore{
+			margin-top: 15rem;
+			color: white;
+			.semibold;
+			font-size: 2rem;
+		}
+		&_moreclick{
+			margin-top: 3rem;
+			margin-bottom: 10rem;
+		}
+	}
+
+}
+
+.aboutus{
+	h2{
+		margin-top: 14.5rem;
+		margin-bottom: 11rem;
+		text-align: center;
+		color: rgb(54, 54, 54);
+		.extrablack;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+	&-h3{	
+			position: relative;	
+		&:before{
+			content:'';
+			position: absolute;
+			display: inline-block;
+			margin-right: 0.8rem;
+			width: 0.417rem;
+			height: 9rem;
+			background-color: rgb(5, 159, 235);
+		}
+
+		&_img{
+			    margin-left: 0.8rem;
+		}
+		h3{
+		color: rgb(54, 54, 54);
+		.extrabold;
+		font-weight: 400;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		margin-left: 0.8rem;
+		margin-top: .7rem;
+		}
+
+	}
+
+	p{
+		color: black;
+		.semibold;
+		font-size: 1.5rem;
+		margin-top: 2.5rem;
+	}
+}
+
