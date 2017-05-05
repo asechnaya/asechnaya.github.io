@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
-@media screen (max-width: 640px) {
+@media (max-width: 640px) {
   .slider {
     height: 100vh;
     -webkit-flex-flow: column;
-    -moz-flex-flow: column;
-    -ms-flex-flow: column;
-    -o-flex-flow: column;
-    flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
     width: 100vw;
   }
   .item {
