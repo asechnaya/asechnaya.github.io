@@ -2,7 +2,9 @@
 @media screen (max-width: 640px) {
   .slider {
     height: 100vh;
-    flex-flow: column;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
     width: 100vw;
   }
   .item {
@@ -13,7 +15,8 @@
   .item:hover {
     width: 90%;
     height: 70vh;
-    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s;
     font-size: 1rem;
   }
 }
@@ -29,23 +32,46 @@ body {
   box-sizing: border-box;
 }
 .slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
 .item {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 25%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
   background-color: #aeaeae;
-  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
 }
 .item:hover {
-  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
 }
 .item span {
   font-size: 2rem;
