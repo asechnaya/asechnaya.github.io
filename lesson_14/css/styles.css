@@ -3,8 +3,10 @@
   .slider {
     height: 100vh;
     -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    -o-flex-flow: column;
+    flex-flow: column;
     width: 100vw;
   }
   .item {
