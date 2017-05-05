@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic');
-@media (max-width: 640px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .slider {
     height: 100vh;
     -webkit-flex-flow: column;
