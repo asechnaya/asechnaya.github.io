@@ -88,7 +88,7 @@ body {
   margin-top: 4.5rem;
   margin-bottom: 6rem;
 }
-.header-form {
+._form {
   width: 35rem;
   height: 34.417rem;
   display: inline-block;
@@ -221,6 +221,7 @@ body {
   }
   .header .header__yellow {
     font-size: 1.5rem;
+    font-family: "p22-heavy", serif;
   }
 }
 @media (max-width: 768px) {
