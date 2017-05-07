@@ -1,0 +1,282 @@
+@import 'fonts.css';
+
+/*Basic settings*/
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "p22-book", serif;
+
+}
+
+* {
+	box-sizing: border-box;
+}
+
+// other
+
+.header{
+	margin: 0 auto;
+    text-align: center;
+  	display: inline-block;
+  	max-width: 1920px;
+  	width: 100%;
+	//height: 68.667rem;
+	background-color: rgba(9, 9, 9, 0.8);
+  	background: url("../img/head-car.jpg") no-repeat center center;
+  	position: relative;
+	background: url(../img/head-car.jpg) center center no-repeat;
+	background-size: cover;
+	&-box{
+		  width: 100%;
+		  height: auto;
+		  margin: 50px auto 0;
+			&__logo{
+				background: url("../img/logo.png") no-repeat center center;
+		  		background-size: cover;
+				width: 8.33rem;
+				height: 4.167rem;
+		  		float: left;
+			}
+			&__text{
+				float: left;
+				/* Text style for "Автозайм" */
+				h2{
+					font-size: 1.5rem;
+					font-weight: 800;
+					margin-top: 0;
+				}
+				/* Text style for "денежные займы" */
+				h3{
+					margin-top: 0;
+					font-size: 1rem;
+					font-family: 'p22-thin';
+					font-weight: 100;
+					margin-left: 0;
+				}
+
+			}
+			&__btn{
+				display: inline-block;
+				float: left;
+				width: 13.5rem;
+				height: 4.25rem;
+				border: 0.083rem solid white;
+				border-radius: 4px;
+				/* Text style for "Заказать звонок" */
+				text-align: center;
+				text-decoration: none;
+				color: white;
+				font-size: 1.25rem;
+				font-weight: 100;
+				line-height: 4rem;
+				&:hover{
+					text-decoration: none;
+					color: white;
+				}
+			}
+			&__tel{
+				float: right;
+				//text-align: right;
+				color: white;
+				font-size: 2.5rem;
+				font-weight: 800;
+				line-height: 5rem;
+				text-transform: uppercase;
+			}
+		}
+	&__yellow{
+			
+			color: rgb(255, 255, 51);
+			font-size: 3rem;
+			font-weight: 800;
+			line-height: 3.75rem;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 4.5rem;
+			margin-bottom: 6rem;
+			
+		}
+
+	&-form{
+		width: 35rem;
+		height: 34.417rem;
+		display: inline-block;
+  		background-color: white;
+		border: 3px solid white;
+		text-align: center;
+		padding: 2rem 2rem 2rem 2rem;
+		h4{
+			margin-bottom: 3.75rem;
+			text-align: center;
+			color: rgb(51, 51, 51);
+			font-size: 1.833rem;
+			font-weight: 300;
+			line-height: 2.083rem;
+		}
+		&_input{
+			display: inline-block;
+			//margin-bottom: 1rem;
+			width: 26.667rem;
+			height: 4.917rem;
+			border: 0.083rem solid rgb(153, 153, 153);
+			border-radius: 4px;
+			span{
+			    display: flex;
+			    float: left;
+				justify-content: center; 
+				align-items: center;
+				width: 4.917rem;
+				height: 4.8rem;
+			    background-color: #303030;
+			    text-align: center;
+			    color: #fff;
+			    border-radius: 3px 0 0 3px;
+			    margin-right: 2rem;
+			}
+			input{
+				float:left;
+				color: rgb(153, 153, 153);
+				padding-left: 1.5rem;
+				font-size: 1.25rem;
+				font-weight: 300;
+				line-height: 3.75rem;
+				border: none;
+				//width: 100%;
+				height: 100%;
+			}
+		}
+		&_btn{
+			padding-top: 1.8rem;
+			background-color: #ffff33;
+			display: inline-block;
+			width: 26.667rem;
+			height: 4.583rem;
+			color: rgb(51, 51, 51);
+			font-size: 1.25rem;
+			font-weight: 300;
+			text-align: center;
+			border-radius: 3px;
+			box-shadow: 0 5px 0 rgb(153, 153, 0);
+		}
+	}
+		&-list{
+			font-size: 1.667rem;
+			font-weight: 300;
+			line-height: 2.917rem;
+			margin-top: 12.5rem;
+			li{
+				margin-bottom: 2.917rem;
+				}
+			i{ 
+				padding-right: 1rem;
+		}
+	}
+	&-money{
+		text-align: center;
+  		margin-top: -7rem;
+	}
+}
+
+
+// -----------------------ЭКРАН С ПPЕИМУЩЕСТВАМИ-------------------------------- //
+
+.section{
+	margin: 0 auto;
+  	max-width: 1920px;
+  	width: 100%;
+	height: 251rem;
+	text-align: center;
+	background-color: white;
+	color: rgb(51, 51, 51);
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.833rem;
+	&-icon{
+		margin-top: 8.25rem;
+		margin-bottom: 2rem;
+	&_div {
+	  background-color: rgb(255, 255, 51);
+	  display: inline-block;
+	  border-radius: 50%;
+	  width: 80px;
+	  height: 80px;
+	  margin-bottom: 2rem;
+	  text-align: center;
+	  line-height: 80px;
+	}
+
+	}
+}
+
+
+.diva{
+	background-color: green;
+	height: 500px;
+	color: black;
+	font-size: 5rem;
+	text-align: center;
+}
+
+
+// ----------------------- @MEDIA -------------------------------- //
+
+//Tablet
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header-money {display: none;}
+  .header .header-list {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header .header-form {
+    margin: 0 25%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .header .header__yellow {
+    font-size: 1.5rem;
+  }
+
+}
+
+// Iphone6
+@media (max-width: 768px) {
+  .header-money {display: none;}
+  .header .header-list {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header .header-form {
+    width: 100%;
+    text-align: center;
+    clear: both;
+  }
+
+  .header .header__yellow {
+    font-size: 1.2rem;
+  }
+
+  .header-box__tel {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .header-box__btn {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .section-icon:not(:first-child) {
+    margin-top: 0px;
+}
+  .section-icon:first-child {
+    margin-top: 5px;
+  }
+}
+
