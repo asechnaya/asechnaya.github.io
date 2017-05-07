@@ -20,7 +20,8 @@ body {
   background: url("../img/head-car.jpg") no-repeat center center;
   position: relative;
   background: url(../img/head-car.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: cover
+  /* Желтое */
 }
 .header-box {
   width: 100%;
@@ -87,8 +88,9 @@ body {
   text-align: center;
   margin-top: 4.5rem;
   margin-bottom: 6rem;
+  font-family: "p22-heavy", serif;
 }
-._form {
+.header-form {
   width: 35rem;
   height: 34.417rem;
   display: inline-block;
@@ -210,49 +212,42 @@ body {
   .header-money {
     display: none;
   }
-  .header .header-list {
+  .header-list {
     margin: 0 auto;
     text-align: center;
   }
-  .header .header-form {
+  .header-form {
     margin: 0 25%;
     text-align: center;
     margin-bottom: 100px;
   }
-  .header .header__yellow {
+  .header__yellow {
     font-size: 1.5rem;
-    font-family: "p22-heavy", serif;
   }
 }
 @media (max-width: 768px) {
   .header-money {
     display: none;
   }
-  .header .header-list {
+  .header-list {
     margin: 0 auto;
     text-align: center;
   }
-  .header .header-form {
+  .header-form {
     width: 100%;
     text-align: center;
     clear: both;
   }
-  .header .header__yellow {
+  .header__yellow {
     font-size: 1.2rem;
-  }
-  .header-box__tel {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 0 auto;
   }
   .header-box__btn {
     margin: 0 auto;
     width: 95%;
   }
-  .section-icon:not(:first-child) {
-    margin-top: 0px;
-  }
-  .section-icon:first-child {
-    margin-top: 5px;
+  .header-box__tel {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
   }
 }
