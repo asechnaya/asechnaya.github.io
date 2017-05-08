@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.ubuntu-bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.sansbold {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+section {
+  width: 100rem;
+  height: 70rem;
+  margin: 10rem auto;
+  background-color: white;
+  position: relative;
+}
+.left {
+  position: relative;
+  float: left;
+  width: 50rem;
+  margin-top: 16rem;
+  margin-left: 0;
+  text-align: center;
+}
+.right {
+  position: relative;
+  float: left;
+  width: 50rem;
+  height: 60rem;
+  margin-top: 10rem;
+  text-align: center
+  /* Text style for "Получи бесплатно" */
+}
+.right h2 {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 4.5rem;
+  margin-bottom: 3rem;
+}
+.right h3 {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 8rem;
+}
+.right .form {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 40rem;
+  padding: 7.8rem;
+  text-align: center;
+}
+.right .form-input {
+  display: inline-block;
+  width: 33rem;
+  height: 5.5rem;
+  padding-left: 3.3rem;
+  margin-bottom: .5rem;
+  color: #7b7b7b;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #888888;
+  border-top: 0px;
+}
+.right .btn {
+  margin-top: 4rem;
+  width: 17.9rem;
+  height: 5.3rem;
+  background-color: #82c5c3;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+.right .btn:hover {
+  background-color: #82c5c3;
+}
+.right .enter {
+  margin-top: 4rem;
+  margin-left: -10rem;
+}
+.right .enter-link {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #f69a7a;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.user {
+  background: url('../img/user.png') no-repeat left center;
+  background-size: 15px 18px;
+}
+.mail {
+  background: url('../img/mail.png') no-repeat left center;
+  background-size: 18px 15px;
+}
+.pass {
+  background: url('../img/password.png') no-repeat left center;
+  background-size: 15px 18px;
+}
+.error {
+  display: block;
+  color: red;
+}
+label {
+  border: none;
+  color: red;
+}
+.box {
+  margin-top: 200px;
+  height: 200px;
+  width: 400px;
+}
