@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 12px;
+	//background: #fff url('../img/bg.jpg') center center no-repeat;
+}
+body {
+  background: url(../img/bg.jpg) repeat-y center center;
+  background-size: cover;
+}
+
+//mixin//
+
+.ubuntu{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.ubuntu-bold{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+.accordion{
+	max-width: 71.667rem;
+  	min-width: 320px;
+  	margin: 0 auto;
+  	position: relative;
+}
+
+
+
+.header{
+		margin-top: 6.667rem;
+		margin-bottom: 4.15rem;
+		line-height: 1.5;
+		text-align: center;
+	&-h1{
+
+		color: rgb(11, 186, 240);
+		.ubuntu-bold;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+	&-h2{
+		//text-align: center;
+		color: rgb(11, 186, 240);
+		.ubuntu;
+		font-size: 1.7rem;
+		text-transform: uppercase;
+	}
+}
+
+.tab{
+	background-color: rgb(11, 186, 240);
+	color: #fff;
+	width: 100%;
+	margin-bottom: -.4rem;
+	//width: 71.667rem;
+	height: 5.4rem;
+	text-align: center;
+	a{	
+		display: inline-block;
+		text-decoration: none;
+		margin-top: 1.5rem;
+		color: white;
+		font-size: 1.5rem;
+		.ubuntu;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.content{
+	display: none;
+	transition: all 0.5s;
+	width: 99%;
+	position: relative;
+	z-index: -1;
+	left: .4rem;
+	height: 11.333rem;
+	padding: 2.5rem;
+	background-color: white;
+	border: 0.333rem solid gainsboro;
+	border-radius: 10px;
+	p{
+		color: rgb(83, 83, 83);
+		.ubuntu;
+		font-size: 1.833rem;
+		line-height: 1.2;
+	}
+}
+.answer {
+  max-height: none;
+  padding: 10px 20px;
+  margin-bottom: -4px;
+}
