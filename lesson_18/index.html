@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> jQuery forms</title>
+
+    <!-- <link href="css/reset.css" rel="stylesheet"> -->
+    <!-- Bootstrap   -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<section>
+  <div class="c"> 
+  <div class="left">
+    <img src="img/image.png" alt="">
+  </div>
+  <div class="right">
+  <h2>Сохрани свой аккаунт</h2>
+  <h3>Получи бесплатно неограниченное количество  <br>форм, вопросов и ответов.
+</h3>
+    <form id="form" action="thanks.html">
+     <input class="form-input user" type="text" id="input-name" name="name" placeholder="Имя или никнейм" minlength="2">
+     <input class="form-input mail" type="text" id="input-email" name="email" placeholder="Email">
+     <input class="form-input pass" type="password" id="input-pass" name="password" placeholder="Пароль">
+     <button type="SUBMIT   " class="btn btn-primary">Сохранить <span class="fa fa-angle-right"></span></button>
+  </form>
+
+  <p class="enter">Уже есть аккаунт? <span><a href="#" class="enter-link">Войти</a></span></p>
+
+  </div>
+  </div>
+</section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+   <!-- <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>-->
+    <script src="js/jquery.validate.min.js"></script>
+    <!--<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>-->
+
+    <script>
+       $('#form').validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            password: {
+              required: true,
+              minlength: 8
+            },
+            email: {
+              required: true,
+              minlength: 3,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: 'Введите имя',
+              minlength: 'Не менее 2 символов'
+            },
+            password: {
+              required: 'Введите пароль',
+              minlength: 'Не менее 8 символов'
+            },
+            email: {
+              required: 'Введите email',
+              minlength: 'Не менее 2 символов',
+              email: 'Введите корректный имейл'
+            }
+          }
+        });
+
+    </script>
+
+  </body>
+</html>
+
