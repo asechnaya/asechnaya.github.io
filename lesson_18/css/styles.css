@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+}
+body {
+  background: url(../img/bg.jpg) repeat-y center center;
+  background-size: cover;
+}
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.ubuntu-bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.accordion {
+  max-width: 71.667rem;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+.header {
+  margin-top: 6.667rem;
+  margin-bottom: 4.15rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.header-h1 {
+  color: #0bbaf0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.header-h2 {
+  color: #0bbaf0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.tab {
+  background-color: #0bbaf0;
+  color: #fff;
+  width: 100%;
+  margin-bottom: -0.4rem;
+  height: 5.4rem;
+  text-align: center;
+}
+.tab a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+.tab a:hover {
+  text-decoration: none;
+}
+.content {
+  display: none;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  width: 99%;
+  position: relative;
+  z-index: -1;
+  left: .4rem;
+  height: 11.333rem;
+  padding: 2.5rem;
+  background-color: white;
+  border: 0.333rem solid gainsboro;
+  border-radius: 10px;
+}
+.content p {
+  color: #535353;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.833rem;
+  line-height: 1.2;
+}
+.answer {
+  max-height: none;
+  padding: 10px 20px;
+  margin-bottom: -4px;
+}
