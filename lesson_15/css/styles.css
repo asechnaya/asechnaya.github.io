@@ -197,13 +197,7 @@ body {
   text-align: center;
   line-height: 80px;
 }
-.diva {
-  background-color: green;
-  height: 500px;
-  color: black;
-  font-size: 5rem;
-  text-align: center;
-}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .header-money {
     display: none;
@@ -233,7 +227,7 @@ body {
     width: 100%;
     text-align: center;
     clear: both;
-    margin-bottom: 4rem;
+    //margin-bottom: 4rem;
   }
   .header-form_input {
     margin-bottom: 1rem;
@@ -251,8 +245,5 @@ body {
     margin: 0 auto;
   }
 }
-.box {
-  background-color: red;
-  width: 100vw;
-  height: 100px;
-}
+section{
+margin-top: 2rem;}
