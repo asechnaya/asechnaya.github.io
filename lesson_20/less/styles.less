@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	//background: #fff url('../img/bg.jpg') center center no-repeat;
+}
+
+body {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+//-----------------mixin------------------------//
+
+.ubuntu{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.ubuntu-bold{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+.sansbold{
+		font-family: "Open Sans";
+		font-weight: 700;
+}
+
+
+//--------------------------------------------
+
+.header{
+	height: 768px;
+	text-align: center;
+	//background-color: #ccc;
+
+.row-1{
+	h4{
+		margin-top: 10rem;
+		color: white;
+		font-size: 1.4rem;
+		line-height: 6.7rem;
+		text-transform: uppercase;
+	}
+	h1{
+		margin-top: 4.5rem;
+	}
+	h3{
+		margin-top: 4.5rem;
+		margin-bottom: 7.5rem;
+	}
+	.form{
+		margin-top: 9rem;
+		margin-bottom: 5rem;
+		color: white;
+		input{
+			display: inline-block;
+			// margin: 0;
+			padding-left: 4.2rem;
+			width: 22rem;
+			height: 5rem;
+			background-color: white;
+			border: 0.1rem solid rgb(227, 227, 227);
+			}
+		button{
+			display: inline-block;
+			width: 16rem;
+			height: 5rem;
+			background-color: rgb(26, 188, 156);
+			outline: none;
+			border: none;
+			}
+		}
+		p {
+			color: white;
+			line-height: 2.7rem;
+			font-size: 1.6rem;
+			.ubuntu;
+		}
+	}
+}
+.green {
+	color: rgb(25, 188, 155);
+	text-decoration: none;
+}
+
+section{
+	height: 90rem;
+	//background-color: #aeaeae;
+	.logo{
+		padding-top: 1.5rem;
+	}
+	.menu{
+		float: left;
+		height: 6.2rem;
+		&-left{
+		padding-top: 2.5rem;
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+		}
+		&-wrapper{		
+		box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+		}
+		&-item{
+			display: inline-block;
+			&-link{
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				color: rgb(166,153,153);
+				padding-right: 3rem;
+				&:hover{text-decoration: none;}
+			}
+		}
+		&-right {
+			float: right;
+			text-align: center;
+			padding-top: 2rem;
+			width: 100%;
+			border-right: 1px solid rgb(243, 243, 243);
+			border-left: 1px solid rgb(243, 243, 243);
+			.facebook, .twitter{
+				margin-right: 2rem;
+			}
+			.circle{
+				color: rgb(143, 143, 141);
+			}
+		}
+	}
+	.main{
+		padding-top: 10rem;
+		text-align: center;
+
+		&-smile{
+			margin-bottom: 4.5rem;
+		}
+		&-text{	
+			margin-bottom: 10rem;		
+			h3{
+			.ubuntu-bold;
+			font-size: 1.5rem;
+			line-height: 6.7rem;
+			text-transform: uppercase;
+			color: rgb(165, 165, 165);
+			}
+			h2{
+			.ubuntu;
+			font-size: 6.1rem;
+			line-height: 6.7rem;
+			color: rgb(76, 76, 76);
+			}
+		}
+		&-left, &-right, &-center{
+			text-align: center;
+			.ubuntu;
+			h3{
+				color: rgb(76, 76, 76);
+				font-size: 2.7rem;
+				line-height: 6.7rem;
+			}
+			p{
+				color: rgb(147, 149, 152);
+				font-size: 1.6rem;
+				line-height: 2.7rem;
+
+			}
+		}
+	}
+}
